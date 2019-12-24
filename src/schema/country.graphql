@@ -1,0 +1,9 @@
+# import Continent from "continent.graphql"
+
+type Country {
+  code: String!
+  name: String!
+  capital: String!
+  currency: String!
+  continent: Continent
+}

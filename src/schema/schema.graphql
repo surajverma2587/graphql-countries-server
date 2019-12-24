@@ -1,0 +1,9 @@
+# import Continent from "continent.graphql"
+# import Country from "country.graphql"
+
+type Query {
+  continents: [Continent]!
+  continent(code: String!): Continent!
+  countries(continent: String): [Country]!
+  country(code: String!): Country!
+}
