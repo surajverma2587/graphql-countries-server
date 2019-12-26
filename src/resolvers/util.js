@@ -1,9 +1,11 @@
 const { continents } = require('countries-list')
 
-exports.createCountry = country => ({
-  name: country.name,
-  capital: country.capital,
-  currency: country.currency,
+exports.createCountry = (code, { name, capital, currency, continent }) => ({
+  code,
+  name,
+  capital,
+  currency,
+  continent: this.createContinent(continent)
 })
 
 exports.createContinent = code => ({
